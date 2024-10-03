@@ -7,6 +7,7 @@ import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.superheroes24.R
 import com.example.superheroes24.domain.models.SuperHero
+import com.example.superheroes24.extensions.loadUrl
 
 class SuperHeroDetailActivity : AppCompatActivity() {
 
@@ -29,6 +30,7 @@ class SuperHeroDetailActivity : AppCompatActivity() {
 
     private fun bindData(superHero: SuperHero) {
         val imageView = findViewById<ImageView>(R.id.image1)
+        imageView.loadUrl(superHero.id)//por el momento no tengo imagenes ya que lo aplicare al implementar retrofit
     }
 
     private fun getSuperHeroId(): String? {

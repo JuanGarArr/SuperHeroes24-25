@@ -50,7 +50,7 @@ dependencies {
     implementation(libs.glide)
     implementation(libs.androidx.cardview)
     implementation(libs.coil)
-
+    implementation(libs.coil)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

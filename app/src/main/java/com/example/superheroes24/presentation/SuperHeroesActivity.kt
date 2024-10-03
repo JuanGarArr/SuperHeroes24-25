@@ -34,32 +34,35 @@ class SuperHeroesActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.hero_id_1)
         findViewById<TextView>(R.id.hero_name_1)
         findViewById<LinearLayout>(R.id.layout1).setOnClickListener {
-            navigateToSuperHeroDetail(superHeroes[0])
+            navigateToSuperHeroDetail(superHeroes[0].id)
         }
 
         findViewById<TextView>(R.id.hero_id_2)
         findViewById<TextView>(R.id.hero_name_2)
         findViewById<LinearLayout>(R.id.layout2).setOnClickListener {
-            navigateToSuperHeroDetail(superHeroes[1])
+            navigateToSuperHeroDetail(superHeroes[1].id)
         }
 
         findViewById<TextView>(R.id.hero_id_3)
         findViewById<TextView>(R.id.hero_name_3)
         findViewById<LinearLayout>(R.id.layout3).setOnClickListener {
-            navigateToSuperHeroDetail(superHeroes[2])
+            navigateToSuperHeroDetail(superHeroes[2].id)
         }
 
         findViewById<TextView>(R.id.hero_id_4)
         findViewById<TextView>(R.id.hero_name_4)
         findViewById<LinearLayout>(R.id.layout4).setOnClickListener {
-            navigateToSuperHeroDetail(superHeroes[3])
+            navigateToSuperHeroDetail(superHeroes[3].id)
         }
 
     }
 
-    private fun navigateToSuperHeroDetail(superHero: SuperHero) {
-        startActivity(SuperHeroDetailActivity.getIntent(this, superHero.id))
+    private fun navigateToSuperHeroDetail(superHeroId: String) {
+        startActivity(SuperHeroDetailActivity.getIntent(this, superHeroId))
     }
+
+
+
 
     override fun onStart() {
         super.onStart()
