@@ -23,7 +23,7 @@
         android:id="@+id/movie_tittle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/movie_tittle"
+        android:text="@string/superHero_tittle"
         android:textStyle="bold"
         android:textSize="40sp"
         app:layout_constraintTop_toBottomOf="@id/image1"
