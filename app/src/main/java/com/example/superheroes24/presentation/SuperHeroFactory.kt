@@ -3,13 +3,13 @@ package com.example.superheroes24.presentation
 import android.content.Context
 import com.example.superheroes24.data.SuperHeroDataRepository
 import com.example.superheroes24.data.local.SuperHeroXmlLocalDataSource
-import com.example.superheroes24.data.remote.SuperHeroMockRemoteDataSource
+import com.example.superheroes24.data.remote.SuperHeroRetrofitDataSource
 import com.example.superheroes24.domain.useCases.GetSuperHeroUseCase
 import com.example.superheroes24.domain.useCases.GetSuperHeroesUseCase
 
 class SuperHeroFactory (private val context: Context) {
 
-    val superHeroMockRemote = SuperHeroMockRemoteDataSource()
+    val superHeroMockRemote = SuperHeroRetrofitDataSource()
     val superHeroXmlLocal = SuperHeroXmlLocalDataSource(context)
 
     val superHeroDataRepository = SuperHeroDataRepository(superHeroMockRemote, superHeroXmlLocal)

@@ -1,12 +1,12 @@
 package com.example.superheroes24.data
 
 import com.example.superheroes24.data.local.SuperHeroXmlLocalDataSource
-import com.example.superheroes24.data.remote.SuperHeroMockRemoteDataSource
+import com.example.superheroes24.data.remote.SuperHeroRetrofitDataSource
 import com.example.superheroes24.domain.SuperHeroRepository
 import com.example.superheroes24.domain.models.SuperHero
 
 class SuperHeroDataRepository(
-    private val remote:SuperHeroMockRemoteDataSource,
+    private val remote:SuperHeroRetrofitDataSource,
     private val local:SuperHeroXmlLocalDataSource
 ) : SuperHeroRepository {
 
