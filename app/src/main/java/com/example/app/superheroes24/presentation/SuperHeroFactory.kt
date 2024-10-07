@@ -1,11 +1,11 @@
-package com.example.superheroes24.presentation
+package com.example.app.superheroes24.presentation
 
 import android.content.Context
-import com.example.superheroes24.data.SuperHeroDataRepository
-import com.example.superheroes24.data.local.SuperHeroXmlLocalDataSource
-import com.example.superheroes24.data.remote.SuperHeroMockRemoteDataSource
-import com.example.superheroes24.domain.useCases.GetSuperHeroUseCase
-import com.example.superheroes24.domain.useCases.GetSuperHeroesUseCase
+import com.example.app.superheroes24.data.SuperHeroDataRepository
+import com.example.app.superheroes24.data.local.SuperHeroXmlLocalDataSource
+import com.example.app.superheroes24.data.remote.SuperHeroMockRemoteDataSource
+import com.example.app.superheroes24.domain.useCases.GetSuperHeroUseCase
+import com.example.app.superheroes24.domain.useCases.GetSuperHeroesUseCase
 
 class SuperHeroFactory (private val context: Context) {
 
@@ -18,7 +18,7 @@ class SuperHeroFactory (private val context: Context) {
     val getSuperHeroesUseCase = GetSuperHeroesUseCase(superHeroDataRepository)
 
     fun buildViewModel(): SuperHeroesViewModel {
-        return SuperHeroesViewModel(getSuperHeroUseCase,getSuperHeroesUseCase)
+        return SuperHeroesViewModel(getSuperHeroesUseCase)
 
     }
 

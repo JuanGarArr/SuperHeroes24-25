@@ -2,4 +2,22 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Colores principales -->
+    <color name="colorPrimary">#0097A7</color> <!-- Azul Cian -->
+    <color name="colorPrimaryVariant">#00796B</color>
+    <color name="colorOnPrimary">#FFFFFF</color> <!-- Blanco -->
+
+    <!-- Colores secundarios -->
+    <color name="colorSecondary">#80DEEA</color> <!-- Azul Cian más claro -->
+    <color name="colorOnSecondary">#000000</color> <!-- Negro para texto sobre el secundario -->
+
+    <!-- Colores de fondo -->
+    <color name="backgroundColor">#E1F5FE</color> <!-- Fondo claro -->
+    <color name="textColor">#00796B</color> <!-- Color para el texto principal -->
+    <color name="secondaryTextColor">#555555</color> <!-- Color para texto secundario -->
+
+    <!-- Colores para errores -->
+    <color name="colorError">#D32F2F</color> <!-- Rojo -->
+    <color name="colorOnError">#FFFFFF</color> <!-- Blanco para texto sobre errores -->
 </resources>

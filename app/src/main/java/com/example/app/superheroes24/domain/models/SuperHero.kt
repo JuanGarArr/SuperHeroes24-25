@@ -1,4 +1,4 @@
-package com.example.superheroes24.domain.models
+package com.example.app.superheroes24.domain.models
 
 data class SuperHero(
     val id: String,

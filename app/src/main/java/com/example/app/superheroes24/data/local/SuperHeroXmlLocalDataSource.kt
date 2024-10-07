@@ -1,7 +1,7 @@
-package com.example.superheroes24.data.local
+package com.example.app.superheroes24.data.local
 
 import android.content.Context
-import com.example.superheroes24.domain.models.SuperHero
+import com.example.app.superheroes24.domain.models.SuperHero
 import com.google.gson.Gson
 
 class SuperHeroXmlLocalDataSource (private val context: Context){

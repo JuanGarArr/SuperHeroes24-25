@@ -1,12 +1,13 @@
-package com.example.superheroes24.presentation
+package com.example.app.superheroes24.presentation
 
 import android.os.Bundle
 import android.util.Log
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
 import com.example.superheroes24.R
-import com.example.superheroes24.domain.models.SuperHero
+import com.example.app.superheroes24.domain.models.SuperHero
 
 class SuperHeroesActivity : AppCompatActivity() {
 
@@ -22,11 +23,27 @@ class SuperHeroesActivity : AppCompatActivity() {
         superHeroFactory = SuperHeroFactory(this)
         viewModel = superHeroFactory.buildViewModel()
 
-        val superHeroes = viewModel.viewCreated()
-
-        bindData(superHeroes)
+        setupObservers()
+        viewModel.viewCreated(this)
 
         }
+
+    private fun setupObservers() {
+        val superHeroesObserver = Observer<SuperHeroesViewModel.UiStage> { uiState ->
+            uiState.superHeroes?.let { superHeroes ->
+                bindData(superHeroes)
+            }
+
+            uiState.errorApp?.let { errorApp ->
+                Log.d("SuperHeroesActivity", "errorApp")
+            }
+
+            uiState.loading?.let { loading ->
+                Log.d("SuperHeroesActivity", "loading")
+            }
+        }
+        viewModel.uiState.observe(this, superHeroesObserver)
+    }
 
 
     private fun bindData(superHeroes: List<SuperHero>) {

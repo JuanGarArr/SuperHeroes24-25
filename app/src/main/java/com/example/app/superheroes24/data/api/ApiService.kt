@@ -1,6 +1,6 @@
-package com.example.superheroes24.data.api
+package com.example.app.superheroes24.data.api
 
-import com.example.superheroes24.domain.models.SuperHero
+import com.example.app.superheroes24.domain.models.SuperHero
 import retrofit2.Response
 import retrofit2.http.GET
 

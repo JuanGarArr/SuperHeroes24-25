@@ -1,7 +1,7 @@
-package com.example.superheroes24.domain.useCases
+package com.example.app.superheroes24.domain.useCases
 
-import com.example.superheroes24.domain.SuperHeroRepository
-import com.example.superheroes24.domain.models.SuperHero
+import com.example.app.superheroes24.domain.SuperHeroRepository
+import com.example.app.superheroes24.domain.models.SuperHero
 
 class GetSuperHeroesUseCase(private val superHeroRepository: SuperHeroRepository) {
 

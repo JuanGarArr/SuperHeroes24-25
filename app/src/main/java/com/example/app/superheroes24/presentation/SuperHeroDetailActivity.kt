@@ -1,18 +1,20 @@
-package com.example.superheroes24.presentation
+package com.example.app.superheroes24.presentation
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
 import com.example.superheroes24.R
-import com.example.superheroes24.domain.models.SuperHero
-import com.example.superheroes24.extensions.loadUrl
+import com.example.app.superheroes24.domain.models.SuperHero
+import com.example.app.superheroes24.extensions.loadUrl
 
 class SuperHeroDetailActivity : AppCompatActivity() {
 
     private lateinit var superHeroFactory: SuperHeroFactory
-    private lateinit var viewModel:SuperHeroDetailViewModel
+    private lateinit var viewModel: SuperHeroDetailViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,11 +23,26 @@ class SuperHeroDetailActivity : AppCompatActivity() {
         superHeroFactory = SuperHeroFactory(this)
         viewModel = superHeroFactory.buildSuperHeroDetailViewModel()
 
-        getSuperHeroId()?.let { superHeroId ->
-            viewModel.viewCreated(superHeroId.toString())?.let { movie ->
-                bindData(movie)
+        setupObservers()
+        viewModel.viewCreated(getSuperHeroId()!!)
+    }
+
+    private fun setupObservers() {
+        val superHeroObserver = Observer<SuperHeroDetailViewModel.UiStage> { uiState ->
+            uiState.superHero?.let { superHero ->
+                bindData(superHero)
+            }
+            uiState.errorApp?.let { errorApp ->
+                Log.d("@dev", "errorApp")
+            }
+
+            if (uiState.loading){
+                Log.d("@dev", "isLoading")
+            }else{
+                Log.d("@dev", "Loaded")
             }
         }
+        viewModel.uiState.observe(this, superHeroObserver)
     }
 
     private fun bindData(superHero: SuperHero) {
