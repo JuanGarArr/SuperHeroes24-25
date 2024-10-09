@@ -33,6 +33,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -51,6 +54,7 @@ dependencies {
     implementation(libs.androidx.cardview)
     implementation(libs.coil)
     implementation(libs.coil)
+    implementation(libs.androidx.navigation.fragment)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

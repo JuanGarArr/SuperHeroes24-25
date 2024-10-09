@@ -48,29 +48,31 @@ class SuperHeroesActivity : AppCompatActivity() {
 
     private fun bindData(superHeroes: List<SuperHero>) {
 
-        findViewById<TextView>(R.id.hero_id_1).text = superHeroes[0].id
-        findViewById<TextView>(R.id.hero_name_1).text = superHeroes[0].name
-        findViewById<LinearLayout>(R.id.layout1).setOnClickListener {
-            navigateToSuperHeroDetail(superHeroes[0].id)
-        }
-
-        findViewById<TextView>(R.id.hero_id_2).text = superHeroes[1].id
-        findViewById<TextView>(R.id.hero_name_2).text = superHeroes[1].name
-        findViewById<LinearLayout>(R.id.layout2).setOnClickListener {
-            navigateToSuperHeroDetail(superHeroes[1].id)
-        }
-
-        findViewById<TextView>(R.id.hero_id_3).text = superHeroes[2].id
-        findViewById<TextView>(R.id.hero_name_3).text = superHeroes[2].name
-        findViewById<LinearLayout>(R.id.layout3).setOnClickListener {
-            navigateToSuperHeroDetail(superHeroes[2].id)
-        }
-
-        findViewById<TextView>(R.id.hero_id_4).text = superHeroes[3].id
-        findViewById<TextView>(R.id.hero_name_4).text = superHeroes[3].name
-        findViewById<LinearLayout>(R.id.layout4).setOnClickListener {
-            navigateToSuperHeroDetail(superHeroes[3].id)
-        }
+        /**
+         *  findViewById<TextView>(R.id.hero_id_1).text = superHeroes[0].id
+         *         findViewById<TextView>(R.id.hero_name_1).text = superHeroes[0].name
+         *         findViewById<LinearLayout>(R.id.layout1).setOnClickListener {
+         *             navigateToSuperHeroDetail(superHeroes[0].id)
+         *         }
+         *
+         *         findViewById<TextView>(R.id.hero_id_2).text = superHeroes[1].id
+         *         findViewById<TextView>(R.id.hero_name_2).text = superHeroes[1].name
+         *         findViewById<LinearLayout>(R.id.layout2).setOnClickListener {
+         *             navigateToSuperHeroDetail(superHeroes[1].id)
+         *         }
+         *
+         *         findViewById<TextView>(R.id.hero_id_3).text = superHeroes[2].id
+         *         findViewById<TextView>(R.id.hero_name_3).text = superHeroes[2].name
+         *         findViewById<LinearLayout>(R.id.layout3).setOnClickListener {
+         *             navigateToSuperHeroDetail(superHeroes[2].id)
+         *         }
+         *
+         *         findViewById<TextView>(R.id.hero_id_4).text = superHeroes[3].id
+         *         findViewById<TextView>(R.id.hero_name_4).text = superHeroes[3].name
+         *         findViewById<LinearLayout>(R.id.layout4).setOnClickListener {
+         *             navigateToSuperHeroDetail(superHeroes[3].id)
+         *         }
+         */
 
     }
 

@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.example.superheroes24.R
@@ -46,9 +47,16 @@ class SuperHeroDetailActivity : AppCompatActivity() {
     }
 
     private fun bindData(superHero: SuperHero) {
-        val imageView = findViewById<ImageView>(R.id.image1)
-        imageView.loadUrl(superHero.id)//por el momento no tengo imagenes ya que lo aplicare al implementar retrofit
-    }
+
+        findViewById<ImageView>(R.id.superhero_img).loadUrl(superHero.images.lg)
+        findViewById<TextView>(R.id.superhero_name).text = superHero.name
+        findViewById<TextView>(R.id.superhero_full_name).text = superHero.powerStats.inteligence.toString()
+        findViewById<TextView>(R.id.superhero_power_stats_label).text = superHero.powerStats.strength.toString()
+        findViewById<TextView>(R.id.superhero_power_stats).text = superHero.powerStats.speed.toString()
+        findViewById<TextView>(R.id.superhero_biography_label).text = superHero.powerStats.durability.toString()
+        findViewById<TextView>(R.id.superhero_biography).text = superHero.powerStats.power.toString()
+
+        }
 
     private fun getSuperHeroId(): String? {
        return intent.getStringExtra(KEY_MOVIE_ID)
