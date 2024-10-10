@@ -55,6 +55,7 @@ dependencies {
     implementation(libs.coil)
     implementation(libs.coil)
     implementation(libs.androidx.navigation.fragment)
+    implementation (libs.androidx.fragment)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

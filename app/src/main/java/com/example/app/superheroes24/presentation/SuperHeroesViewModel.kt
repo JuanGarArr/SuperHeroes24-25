@@ -18,7 +18,7 @@ class SuperHeroesViewModel(
     private val _uiState = MutableLiveData<UiStage>()
     val uiState: MutableLiveData<UiStage> = _uiState
 
-    fun viewCreated(activity: SuperHeroesActivity) {
+    fun viewCreated() {
 
         _uiState.value = UiStage(loading = true)
 

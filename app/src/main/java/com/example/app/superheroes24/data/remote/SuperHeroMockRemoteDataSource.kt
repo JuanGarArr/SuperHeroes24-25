@@ -65,17 +65,17 @@ class SuperHeroMockRemoteDataSource {
         )
 
         val images3 = Images(
-            "https://upload.wikimedia.org/wikipedia/en/e/ed/Wonder_Woman_%282017_film%29.jpg",  // Wonder Woman.jpg
-            "https://upload.wikimedia.org/wikipedia/en/e/ed/Wonder_Woman_%282017_film%29.jpg",  // Wonder Woman.png
-            "https://upload.wikimedia.org/wikipedia/en/e/ed/Wonder_Woman_%282017_film%29.jpg",  // Wonder Woman_art.png
-            "https://upload.wikimedia.org/wikipedia/en/e/ed/Wonder_Woman_%282017_film%29.jpg"   // Wonder Woman_icon.png
+            "https://upload.wikimedia.org/wikipedia/en/9/93/Wonder_Woman_Infobox.png",  // Wonder Woman.jpg
+            "https://upload.wikimedia.org/wikipedia/en/9/93/Wonder_Woman_Infobox.png",  // Wonder Woman.png
+            "https://upload.wikimedia.org/wikipedia/en/9/93/Wonder_Woman_Infobox.png",  // Wonder Woman_art.png
+            "https://upload.wikimedia.org/wikipedia/en/9/93/Wonder_Woman_Infobox.png"   // Wonder Woman_icon.png
         )
 
         val images4 = Images(
-            "https://upload.wikimedia.org/wikipedia/en/0/0c/Spiderman50.jpg",  // Spider-Man.jpg
-            "https://upload.wikimedia.org/wikipedia/en/0/0c/Spiderman50.jpg",  // Spider-Man.png
-            "https://upload.wikimedia.org/wikipedia/en/0/0c/Spiderman50.jpg",  // Spider-Man_art.png
-            "https://upload.wikimedia.org/wikipedia/en/0/0c/Spiderman50.jpg"   // Spider-Man_icon.png
+            "https://upload.wikimedia.org/wikipedia/en/0/02/Spider-Man.png",  // Spider-Man.jpg
+            "https://upload.wikimedia.org/wikipedia/en/0/02/Spider-Man.png",  // Spider-Man.png
+            "https://upload.wikimedia.org/wikipedia/en/0/02/Spider-Man.png",  // Spider-Man_art.png
+            "https://upload.wikimedia.org/wikipedia/en/0/02/Spider-Man.png"   // Spider-Man_icon.png
         )
 
         return listOf(
