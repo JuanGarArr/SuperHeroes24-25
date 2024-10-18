@@ -8,7 +8,7 @@ import com.example.app.superheroes24.domain.models.SuperHero
 class SuperHeroMockRemoteDataSource {
 
     fun getSuperHeroes(): List<SuperHero> {
-        val stats1 = PowerStats(100, 85, 90, 80, 100, 95) // Fuerza, Velocidad, Resistencia, Inteligencia, Poder, Combate
+        val stats1 = PowerStats(100, 85, 90, 80, 100, 95)
         val stats2 = PowerStats(80, 90, 85, 95, 70, 80)
         val stats3 = PowerStats(70, 100, 60, 90, 75, 85)
         val stats4 = PowerStats(90, 70, 85, 75, 80, 90)
@@ -51,31 +51,31 @@ class SuperHeroMockRemoteDataSource {
         )
 
         val images1 = Images(
-            "https://upload.wikimedia.org/wikipedia/en/3/35/Supermanflying.png",   // Superman.jpg
-            "https://upload.wikimedia.org/wikipedia/en/3/35/Supermanflying.png",   // Superman.png
-            "https://upload.wikimedia.org/wikipedia/en/3/35/Supermanflying.png",   // Superman_art.png
-            "https://upload.wikimedia.org/wikipedia/en/3/35/Supermanflying.png"    // Superman_icon.png
+            "https://upload.wikimedia.org/wikipedia/en/3/35/Supermanflying.png",
+            "https://upload.wikimedia.org/wikipedia/en/3/35/Supermanflying.png",
+            "https://upload.wikimedia.org/wikipedia/en/3/35/Supermanflying.png",
+            "https://upload.wikimedia.org/wikipedia/en/3/35/Supermanflying.png"
         )
 
         val images2 = Images(
-            "https://upload.wikimedia.org/wikipedia/en/8/87/Batman_DC_Comics.png",  // Batman.jpg
-            "https://upload.wikimedia.org/wikipedia/en/8/87/Batman_DC_Comics.png",  // Batman.png
-            "https://upload.wikimedia.org/wikipedia/en/8/87/Batman_DC_Comics.png",  // Batman_art.png
-            "https://upload.wikimedia.org/wikipedia/en/8/87/Batman_DC_Comics.png"   // Batman_icon.png
+            "https://upload.wikimedia.org/wikipedia/en/8/87/Batman_DC_Comics.png",
+            "https://upload.wikimedia.org/wikipedia/en/8/87/Batman_DC_Comics.png",
+            "https://upload.wikimedia.org/wikipedia/en/8/87/Batman_DC_Comics.png",
+            "https://upload.wikimedia.org/wikipedia/en/8/87/Batman_DC_Comics.png"
         )
 
         val images3 = Images(
-            "https://upload.wikimedia.org/wikipedia/en/9/93/Wonder_Woman_Infobox.png",  // Wonder Woman.jpg
-            "https://upload.wikimedia.org/wikipedia/en/9/93/Wonder_Woman_Infobox.png",  // Wonder Woman.png
-            "https://upload.wikimedia.org/wikipedia/en/9/93/Wonder_Woman_Infobox.png",  // Wonder Woman_art.png
-            "https://upload.wikimedia.org/wikipedia/en/9/93/Wonder_Woman_Infobox.png"   // Wonder Woman_icon.png
+            "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Wonder_Woman_DC_Comics.png/220px-Wonder_Woman_DC_Comics.png",
+            "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Wonder_Woman_DC_Comics.png/220px-Wonder_Woman_DC_Comics.png",
+            "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Wonder_Woman_DC_Comics.png/220px-Wonder_Woman_DC_Comics.png",
+            "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Wonder_Woman_DC_Comics.png/220px-Wonder_Woman_DC_Comics.png"
         )
 
         val images4 = Images(
-            "https://upload.wikimedia.org/wikipedia/en/0/02/Spider-Man.png",  // Spider-Man.jpg
-            "https://upload.wikimedia.org/wikipedia/en/0/02/Spider-Man.png",  // Spider-Man.png
-            "https://upload.wikimedia.org/wikipedia/en/0/02/Spider-Man.png",  // Spider-Man_art.png
-            "https://upload.wikimedia.org/wikipedia/en/0/02/Spider-Man.png"   // Spider-Man_icon.png
+            "https://purepng.com/public/uploads/thumbnail//purepng.com-spiderman-comicspider-manspidermansuperherocomic-bookmarvel-comicscharacterstan-leegamesmovie-1701528656362t3kbm.png",
+            "https://purepng.com/public/uploads/thumbnail//purepng.com-spiderman-comicspider-manspidermansuperherocomic-bookmarvel-comicscharacterstan-leegamesmovie-1701528656362t3kbm.png",
+            "https://purepng.com/public/uploads/thumbnail//purepng.com-spiderman-comicspider-manspidermansuperherocomic-bookmarvel-comicscharacterstan-leegamesmovie-1701528656362t3kbm.png",
+            "https://purepng.com/public/uploads/thumbnail//purepng.com-spiderman-comicspider-manspidermansuperherocomic-bookmarvel-comicscharacterstan-leegamesmovie-1701528656362t3kbm.png"
         )
 
         return listOf(

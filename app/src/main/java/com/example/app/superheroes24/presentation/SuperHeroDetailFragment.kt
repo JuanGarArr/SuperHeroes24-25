@@ -47,7 +47,7 @@ class SuperHeroDetailFragment : Fragment() {
     }
 
     private fun getSuperHeroId():String? {
-        return "2"
+        return "1"
     }
 
     private fun setupObservers() {
@@ -70,13 +70,13 @@ class SuperHeroDetailFragment : Fragment() {
 
     private fun bindData(superHero: SuperHero) {
             binding.apply {
-                superheroImg.loadUrl(superHero.images.lg)
+                superheroImg.loadUrl(superHero.images.md)
                 superheroName.text = superHero.name
                 superheroFullName.text = superHero.biography.fullName
-                superheroPowerStatsLabel.text = superHero.powerStats.toString()
-                superheroPowerStats.text = superHero.powerStats.toString()
-                superheroBiographyLabel.text = superHero.biography.toString()
-                superheroBiography.text = superHero.biography.toString()
+
+
+
+
             }
         }
 

@@ -26,7 +26,7 @@
                 android:id="@+id/header"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="LISTADO DE SUPER HÉROES"
+                android:text="@string/super_heroes_app"
                 android:textSize="24sp"
                 android:textColor="@color/colorOnPrimary"
                 android:layout_below="@id/toolbar"
