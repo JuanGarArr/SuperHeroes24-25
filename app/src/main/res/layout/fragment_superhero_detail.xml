@@ -202,7 +202,7 @@
             <TextView
                 android:id="@+id/superhero_biography_label"
                 android:textAlignment="center"
-                android:text="@string/description"
+                android:text="@string/biography"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"

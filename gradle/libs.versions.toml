@@ -1,7 +1,8 @@
 [versions]
-agp = "8.6.0"
+agp = "8.6.1"
 cardview = "1.0.0"
 coilCompose = "2.7.0"
+converterGsonVersion = "latest.version"
 fragment = "1.8.4"
 glide = "4.16.0"
 kotlin = "1.9.0"
@@ -10,14 +11,14 @@ junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 appcompat = "1.7.0"
-lifecycleViewmodelKtx = "2.6.2"
+lifecycleViewmodelKtx = "2.8.6"
 loggingInterceptor = "4.11.0"
 material = "1.12.0"
-activity = "1.9.2"
+activity = "1.9.3"
 constraintlayout = "2.1.4"
-retrofit = "2.9.0"
+retrofit = "2.11.0"
 gson = "2.11.0"
-navigationFragment = "2.8.2"
+navigationFragment = "2.8.3"
 
 
 [libraries]
@@ -40,6 +41,8 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 gson-serializer = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
+#
+retrofit2-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

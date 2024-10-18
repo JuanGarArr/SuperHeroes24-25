@@ -6,6 +6,6 @@
     <string name="superhero_description">Descripción superhéroe</string>
     <string name="superhero_name">SUPERHÉROE</string>
     <string name="power_stats_title">Power Stats</string>
-    <string name="description">Description</string>
+    <string name="biography">Biography</string>
     <string name="super_heroes_app">SUPER HEROES APP</string>
 </resources>

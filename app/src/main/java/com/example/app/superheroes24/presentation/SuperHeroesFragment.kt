@@ -64,28 +64,28 @@ class SuperHeroesFragment : Fragment(){
             superheroName1.text = superHeroes[0].name
             superheroDescription1.text = superHeroes[0].biography.fullName
             layout1.setOnClickListener {
-                findNavController().navigate(R.id.superheroes_fragment_to_superhero_fragment)
+                findNavController().navigate(SuperHeroesFragmentDirections.superheroesFragmentToSuperheroFragmentDetail(superHeroes[0].id))
             }
 
             superheroAvatar2.loadUrl(superHeroes[1].images.lg)
             superheroName2.text = superHeroes[1].name
             superheroDescription2.text = superHeroes[1].biography.fullName
             layout2.setOnClickListener {
-                findNavController().navigate(R.id.superheroes_fragment_to_superhero_fragment)
+                findNavController().navigate(SuperHeroesFragmentDirections.superheroesFragmentToSuperheroFragmentDetail(superHeroes[1].id))
             }
 
             superheroAvatar3.loadUrl(superHeroes[2].images.lg)
             superheroName3.text = superHeroes[2].name
             superheroDescription3.text = superHeroes[2].biography.fullName
             layout3.setOnClickListener {
-                findNavController().navigate(R.id.superheroes_fragment_to_superhero_fragment)
+                findNavController().navigate(SuperHeroesFragmentDirections.superheroesFragmentToSuperheroFragmentDetail(superHeroes[2].id))
             }
 
             superheroAvatar4.loadUrl(superHeroes[3].images.lg)
             superheroName4.text = superHeroes[3].name
             superheroDescription4.text = superHeroes[3].biography.fullName
             layout4.setOnClickListener {
-                findNavController().navigate(R.id.superheroes_fragment_to_superhero_fragment)
+                findNavController().navigate(SuperHeroesFragmentDirections.superheroesFragmentToSuperheroFragmentDetail(superHeroes[3].id))
             }
         }
     }

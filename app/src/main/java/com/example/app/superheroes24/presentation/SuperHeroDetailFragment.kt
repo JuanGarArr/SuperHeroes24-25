@@ -1,18 +1,13 @@
 package com.example.app.superheroes24.presentation
 
-import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
-import com.example.superheroes24.R
+import androidx.navigation.fragment.navArgs
 import com.example.app.superheroes24.domain.models.SuperHero
 import com.example.app.superheroes24.extensions.loadUrl
 import com.example.superheroes24.databinding.FragmentSuperheroDetailBinding
@@ -24,6 +19,8 @@ class SuperHeroDetailFragment : Fragment() {
 
     private var _binding: FragmentSuperheroDetailBinding? = null
     private val binding get() = _binding!!
+
+    val args: SuperHeroDetailFragmentArgs by navArgs()
 
 
     override fun onCreateView(
@@ -40,14 +37,10 @@ class SuperHeroDetailFragment : Fragment() {
         superHeroFactory = SuperHeroFactory(requireContext())
         viewModel = superHeroFactory.buildSuperHeroDetailViewModel()
         setupObservers()
-        getSuperHeroId()?.let { superHeroId ->
-            viewModel.viewCreated(superHeroId)
-        }
+        val superHeroId = args.superHeroId
+        viewModel.loadSuperHero(superHeroId)
 
-    }
 
-    private fun getSuperHeroId():String? {
-        return "1"
     }
 
     private fun setupObservers() {
@@ -69,15 +62,16 @@ class SuperHeroDetailFragment : Fragment() {
     }
 
     private fun bindData(superHero: SuperHero) {
-            binding.apply {
-                superheroImg.loadUrl(superHero.images.md)
-                superheroName.text = superHero.name
-                superheroFullName.text = superHero.biography.fullName
+        binding.apply {
+            superheroImg.loadUrl(superHero.images.md)
+
+            superheroName.text = superHero.name
+            superheroFullName.text = superHero.biography.fullName
 
 
 
 
-            }
+        }
         }
 
 

@@ -10,7 +10,7 @@ data class SuperHero(
 )
 
 data class PowerStats(
-    val inteligence: Int,
+    val intelligence: Int,
     val strength: Int,
     val speed: Int,
     val durability: Int,
@@ -34,3 +34,5 @@ data class Images(
     val md: String,
     val lg: String
 )
+
+

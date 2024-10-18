@@ -17,7 +17,7 @@ class SuperHeroDetailViewModel(
     private val _uiState = MutableLiveData<UiStage>()
     val uiState: MutableLiveData<UiStage> = _uiState
 
-    fun viewCreated(superHeroId : String){
+    fun loadSuperHero(superHeroId : String){
         _uiState.value = UiStage(loading = true)
 
         viewModelScope.launch (Dispatchers.IO){

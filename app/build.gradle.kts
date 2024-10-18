@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id ("androidx.navigation.safeargs")
 }
 
 android {
@@ -56,6 +57,8 @@ dependencies {
     implementation(libs.coil)
     implementation(libs.androidx.navigation.fragment)
     implementation (libs.androidx.fragment)
+    implementation (libs.retrofit)
+    implementation (libs.retrofit2.converter.gson)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

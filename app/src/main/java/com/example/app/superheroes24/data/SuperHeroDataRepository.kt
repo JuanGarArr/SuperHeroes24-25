@@ -1,18 +1,19 @@
 package com.example.app.superheroes24.data
 
 import com.example.app.superheroes24.data.local.SuperHeroXmlLocalDataSource
+import com.example.app.superheroes24.data.remote.SuperHeroApiDataSource
 import com.example.app.superheroes24.data.remote.SuperHeroMockRemoteDataSource
 import com.example.app.superheroes24.domain.SuperHeroRepository
 import com.example.app.superheroes24.domain.models.SuperHero
 
 class SuperHeroDataRepository(
-    private val remote: SuperHeroMockRemoteDataSource,
+    private val remote: SuperHeroApiDataSource,
     private val local: SuperHeroXmlLocalDataSource
 ) : SuperHeroRepository {
 
 
 
-    override fun getSuperHeroes(): List<SuperHero> {
+    override suspend fun getSuperHeroes(): List<SuperHero> {
         val heroesFromLocal = local.getAll()
 
         return if(heroesFromLocal.isEmpty()){
@@ -24,11 +25,11 @@ class SuperHeroDataRepository(
         }
     }
 
-    override fun getSuperHero(superHeroId: String): SuperHero? {
+    override suspend fun getSuperHero(superHeroId: String): SuperHero? {
         val heroFromLocal = local.getById(superHeroId)
 
         return if(heroFromLocal == null){
-            val superheroFromRemote = remote.getHero(superHeroId)
+            val superheroFromRemote = remote.getSuperHero(superHeroId)
             superheroFromRemote?.let { superHeroe ->
                 local.save(superHeroe)
             }

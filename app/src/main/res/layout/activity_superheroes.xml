@@ -46,9 +46,10 @@
         app:layout_constraintStart_toStartOf="@id/toolbar_container"
         app:navGraph="@navigation/nav_graph"
         app:defaultNavHost="true"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
