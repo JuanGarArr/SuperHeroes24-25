@@ -1,9 +1,9 @@
-package com.example.app.superheroes24.data.remote
+package com.example.superheroes24.data.remote
 
-import com.example.app.superheroes24.domain.models.Biography
-import com.example.app.superheroes24.domain.models.Images
-import com.example.app.superheroes24.domain.models.PowerStats
-import com.example.app.superheroes24.domain.models.SuperHero
+import com.example.superheroes24.domain.models.Biography
+import com.example.superheroes24.domain.models.Images
+import com.example.superheroes24.domain.models.PowerStats
+import com.example.superheroes24.domain.models.SuperHero
 
 class SuperHeroMockRemoteDataSource {
 

@@ -9,7 +9,7 @@
 
     <fragment
         android:id="@+id/superheroes_fragment"
-        android:name="com.example.app.superheroes24.presentation.SuperHeroesFragment"
+        android:name="com.example.superheroes24.presentation.SuperHeroesFragment"
         tools:layout="@layout/fragment_superheroes">
 
         <action
@@ -21,7 +21,7 @@
 
     <fragment
         android:id="@+id/superhero_detail_fragment"
-        android:name="com.example.app.superheroes24.presentation.SuperHeroDetailFragment"
+        android:name="com.example.superheroes24.presentation.SuperHeroDetailFragment"
         tools:layout="@layout/fragment_superhero_detail">
 
         <argument

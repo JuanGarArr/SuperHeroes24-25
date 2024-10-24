@@ -19,6 +19,7 @@ constraintlayout = "2.1.4"
 retrofit = "2.11.0"
 gson = "2.11.0"
 navigationFragment = "2.8.3"
+playServicesDtdi = "16.0.0-beta02"
 
 
 [libraries]
@@ -43,6 +44,7 @@ gson-serializer = { group = "com.google.code.gson", name = "gson", version.ref =
 androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
 #
 retrofit2-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+play-services-dtdi = { group = "com.google.android.gms", name = "play-services-dtdi", version.ref = "playServicesDtdi" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

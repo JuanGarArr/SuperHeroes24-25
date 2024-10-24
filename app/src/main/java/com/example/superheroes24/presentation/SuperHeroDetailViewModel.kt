@@ -1,11 +1,11 @@
-package com.example.app.superheroes24.presentation
+package com.example.superheroes24.presentation
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.app.domain.ErrorApp
-import com.example.app.superheroes24.domain.models.SuperHero
-import com.example.app.superheroes24.domain.useCases.GetSuperHeroUseCase
+import com.example.superheroes24.domain.models.SuperHero
+import com.example.superheroes24.domain.useCases.GetSuperHeroUseCase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

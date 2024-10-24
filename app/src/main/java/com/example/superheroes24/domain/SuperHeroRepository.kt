@@ -1,6 +1,6 @@
-package com.example.app.superheroes24.domain
+package com.example.superheroes24.domain
 
-import com.example.app.superheroes24.domain.models.SuperHero
+import com.example.superheroes24.domain.models.SuperHero
 
 interface SuperHeroRepository {
 

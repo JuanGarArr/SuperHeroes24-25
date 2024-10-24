@@ -1,4 +1,4 @@
-package com.example.app.superheroes24.presentation
+package com.example.superheroes24.presentation
 
 import android.os.Bundle
 import android.util.Log
@@ -8,8 +8,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.navArgs
-import com.example.app.superheroes24.domain.models.SuperHero
-import com.example.app.superheroes24.extensions.loadUrl
+import com.example.superheroes24.presentation.SuperHeroDetailFragmentArgs
+import com.example.superheroes24.domain.models.SuperHero
+import com.example.superheroes24.extensions.loadUrl
 import com.example.superheroes24.databinding.FragmentSuperheroDetailBinding
 
 class SuperHeroDetailFragment : Fragment() {

@@ -1,7 +1,7 @@
-package com.example.app.superheroes24.data.remote
+package com.example.superheroes24.data.remote
 
-import com.example.app.superheroes24.data.api.SuperHeroService
-import com.example.app.superheroes24.domain.models.SuperHero
+import com.example.superheroes24.data.api.SuperHeroService
+import com.example.superheroes24.domain.models.SuperHero
 
 class SuperHeroApiDataSource (private val superHeroService: SuperHeroService){
 

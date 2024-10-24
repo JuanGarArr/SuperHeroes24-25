@@ -1,13 +1,13 @@
-package com.example.app.superheroes24.presentation
+package com.example.superheroes24.presentation
 
 import android.content.Context
 import com.example.app.data.api.ApiClient
-import com.example.app.superheroes24.data.SuperHeroDataRepository
-import com.example.app.superheroes24.data.local.SuperHeroXmlLocalDataSource
-import com.example.app.superheroes24.data.remote.SuperHeroApiDataSource
-import com.example.app.superheroes24.data.remote.SuperHeroMockRemoteDataSource
-import com.example.app.superheroes24.domain.useCases.GetSuperHeroUseCase
-import com.example.app.superheroes24.domain.useCases.GetSuperHeroesUseCase
+import com.example.superheroes24.data.SuperHeroDataRepository
+import com.example.superheroes24.data.local.SuperHeroXmlLocalDataSource
+import com.example.superheroes24.data.remote.SuperHeroApiDataSource
+import com.example.superheroes24.data.remote.SuperHeroMockRemoteDataSource
+import com.example.superheroes24.domain.useCases.GetSuperHeroUseCase
+import com.example.superheroes24.domain.useCases.GetSuperHeroesUseCase
 
 class SuperHeroFactory (private val context: Context) {
 

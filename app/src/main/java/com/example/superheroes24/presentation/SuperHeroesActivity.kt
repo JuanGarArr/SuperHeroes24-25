@@ -1,11 +1,11 @@
-package com.example.app.superheroes24.presentation
+package com.example.superheroes24.presentation
 
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.example.superheroes24.R
-import com.example.app.superheroes24.domain.models.SuperHero
+import com.example.superheroes24.domain.models.SuperHero
 
 class SuperHeroesActivity : AppCompatActivity() {
 

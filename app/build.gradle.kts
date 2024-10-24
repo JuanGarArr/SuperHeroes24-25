@@ -59,6 +59,7 @@ dependencies {
     implementation (libs.androidx.fragment)
     implementation (libs.retrofit)
     implementation (libs.retrofit2.converter.gson)
+    implementation(libs.play.services.dtdi)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

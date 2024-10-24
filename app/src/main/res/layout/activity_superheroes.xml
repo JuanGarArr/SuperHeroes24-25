@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundColor"
-    tools:context="com.example.app.superheroes24.presentation.SuperHeroesActivity">
+    tools:context=".presentation.SuperHeroesActivity">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/toolbar_container"
@@ -49,6 +49,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/button_navigation"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/main_menu"
+        app:labelVisibilityMode="labeled"/>
 
 
 

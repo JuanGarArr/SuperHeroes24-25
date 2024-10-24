@@ -1,6 +1,6 @@
 package com.example.app.data.api
 
-import com.example.app.superheroes24.data.api.SuperHeroService
+import com.example.superheroes24.data.api.SuperHeroService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

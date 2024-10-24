@@ -1,10 +1,10 @@
-package com.example.app.superheroes24.data
+package com.example.superheroes24.data
 
-import com.example.app.superheroes24.data.local.SuperHeroXmlLocalDataSource
-import com.example.app.superheroes24.data.remote.SuperHeroApiDataSource
-import com.example.app.superheroes24.data.remote.SuperHeroMockRemoteDataSource
-import com.example.app.superheroes24.domain.SuperHeroRepository
-import com.example.app.superheroes24.domain.models.SuperHero
+import com.example.superheroes24.data.local.SuperHeroXmlLocalDataSource
+import com.example.superheroes24.data.remote.SuperHeroApiDataSource
+import com.example.superheroes24.data.remote.SuperHeroMockRemoteDataSource
+import com.example.superheroes24.domain.SuperHeroRepository
+import com.example.superheroes24.domain.models.SuperHero
 
 class SuperHeroDataRepository(
     private val remote: SuperHeroApiDataSource,

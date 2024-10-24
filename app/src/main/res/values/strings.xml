@@ -8,4 +8,8 @@
     <string name="power_stats_title">Power Stats</string>
     <string name="biography">Biography</string>
     <string name="super_heroes_app">SUPER HEROES APP</string>
+    <string name="superherolist">SuperHeroList</string>
+    <string name="hero">Hero</string>
+    <string name="heroes">Heroes</string>
+    <string name="full_name">full_name</string>
 </resources>

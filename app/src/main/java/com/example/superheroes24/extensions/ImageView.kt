@@ -1,4 +1,4 @@
-package com.example.app.superheroes24.extensions
+package com.example.superheroes24.extensions
 
 import android.widget.ImageView
 import coil.load
