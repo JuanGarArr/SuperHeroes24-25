@@ -44,7 +44,7 @@ class SuperHeroesFragment : Fragment() {
             heroesRecyclerView.apply {
                 layoutManager = GridLayoutManager(
                     context,
-                    1,
+                    2,
                     LinearLayoutManager.VERTICAL,
                     false
 

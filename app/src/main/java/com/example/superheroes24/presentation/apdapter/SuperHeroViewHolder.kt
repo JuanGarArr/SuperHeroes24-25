@@ -4,6 +4,7 @@ import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.example.superheroes24.databinding.ItemSuperheroesBinding
+import com.example.superheroes24.databinding.ItemSuperheroesBuenoBinding
 import com.example.superheroes24.domain.models.SuperHero
 
 class SuperHeroViewHolder(val view : View) : RecyclerView.ViewHolder(view) {

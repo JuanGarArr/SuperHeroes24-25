@@ -13,8 +13,7 @@
         android:layout_height="wrap_content"
         app:cardCornerRadius="5dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
->
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -22,18 +21,19 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
             <TextView
                 android:id="@+id/header"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/super_heroes_app"
-                android:textSize="24sp"
-                android:textColor="@color/colorOnPrimary"
                 android:layout_below="@id/toolbar"
+                android:layout_centerHorizontal="true"
                 android:layout_margin="16dp"
+                android:text="@string/super_heroes_app"
                 android:textAlignment="center"
-                android:textStyle="bold"
-                android:layout_centerHorizontal="true"/>
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.card.MaterialCardView>
@@ -42,24 +42,23 @@
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
-        app:layout_constraintTop_toBottomOf="@id/toolbar_container"
-        app:layout_constraintStart_toStartOf="@id/toolbar_container"
-        app:navGraph="@navigation/nav_graph"
-        app:defaultNavHost="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:defaultNavHost="true"
+        app:layout_constraintStart_toStartOf="@id/toolbar_container"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_container"
+        app:navGraph="@navigation/nav_graph"
         tools:ignore="MissingConstraints" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/button_navigation"
-        android:background="@color/colorPrimary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/colorPrimary"
+        app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/main_menu"
-        app:labelVisibilityMode="labeled"/>
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/main_menu" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
