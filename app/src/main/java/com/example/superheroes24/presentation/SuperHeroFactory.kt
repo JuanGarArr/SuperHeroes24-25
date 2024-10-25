@@ -19,7 +19,7 @@ class SuperHeroFactory (private val context: Context) {
     val getSuperHeroUseCase = GetSuperHeroUseCase(superHeroDataRepository)
     val getSuperHeroesUseCase = GetSuperHeroesUseCase(superHeroDataRepository)
 
-    fun buildViewModel(): SuperHeroesViewModel {
+    fun getSuperHeroesViewModel(): SuperHeroesViewModel {
         return SuperHeroesViewModel(getSuperHeroesUseCase)
 
     }
