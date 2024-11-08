@@ -5,7 +5,9 @@ import com.example.superheroes24.data.remote.SuperHeroApiDataSource
 import com.example.superheroes24.data.remote.SuperHeroMockRemoteDataSource
 import com.example.superheroes24.domain.SuperHeroRepository
 import com.example.superheroes24.domain.models.SuperHero
+import org.koin.core.annotation.Single
 
+@Single
 class SuperHeroDataRepository(
     private val remote: SuperHeroApiDataSource,
     private val local: SuperHeroXmlLocalDataSource

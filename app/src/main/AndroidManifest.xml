@@ -16,6 +16,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SuperHeroes24"
+        android:name=".app.SuperHeroesApp"
         tools:targetApi="31">
 
         <activity android:name=".presentation.SuperHeroDetailFragment"

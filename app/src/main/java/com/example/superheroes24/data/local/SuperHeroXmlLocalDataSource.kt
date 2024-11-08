@@ -3,7 +3,10 @@ package com.example.superheroes24.data.local
 import android.content.Context
 import com.example.superheroes24.domain.models.SuperHero
 import com.google.gson.Gson
+import org.koin.core.annotation.Factory
+import org.koin.core.annotation.Single
 
+@Single
 class SuperHeroXmlLocalDataSource (private val context: Context){
 
     val sharedPref = context.getSharedPreferences(

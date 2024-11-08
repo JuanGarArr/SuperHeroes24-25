@@ -9,7 +9,9 @@ import com.example.superheroes24.domain.useCases.GetSuperHeroUseCase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import org.koin.android.annotation.KoinViewModel
 
+@KoinViewModel
 class SuperHeroDetailViewModel(
     private val getSuperHeroUseCase: GetSuperHeroUseCase
 ) : ViewModel() {

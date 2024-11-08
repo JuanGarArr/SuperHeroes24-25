@@ -12,12 +12,12 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.superheroes24.databinding.FragmentSuperheroesBinding
 import com.example.superheroes24.presentation.apdapter.SuperHeroAdapter
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
 class SuperHeroesFragment : Fragment() {
 
-    private lateinit var superHeroFactory: SuperHeroFactory
-    private lateinit var viewModel: SuperHeroesViewModel
+    private val viewModel: SuperHeroesViewModel by viewModel()
 
     private var _binding: FragmentSuperheroesBinding? = null
     private val binding get() = _binding!!
@@ -36,8 +36,6 @@ class SuperHeroesFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        superHeroFactory = SuperHeroFactory(requireContext())
-        viewModel = superHeroFactory.getSuperHeroesViewModel()
         setupObservers()
         viewModel.viewCreated()
     }

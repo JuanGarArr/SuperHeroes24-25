@@ -2,7 +2,9 @@ package com.example.superheroes24.data.remote
 
 import com.example.superheroes24.data.api.SuperHeroService
 import com.example.superheroes24.domain.models.SuperHero
+import org.koin.core.annotation.Single
 
+@Single
 class SuperHeroApiDataSource (private val superHeroService: SuperHeroService){
 
 

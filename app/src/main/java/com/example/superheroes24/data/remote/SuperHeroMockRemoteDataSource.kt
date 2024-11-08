@@ -4,7 +4,9 @@ import com.example.superheroes24.domain.models.Biography
 import com.example.superheroes24.domain.models.Images
 import com.example.superheroes24.domain.models.PowerStats
 import com.example.superheroes24.domain.models.SuperHero
+import org.koin.core.annotation.Single
 
+@Single
 class SuperHeroMockRemoteDataSource {
 
     fun getSuperHeroes(): List<SuperHero> {
