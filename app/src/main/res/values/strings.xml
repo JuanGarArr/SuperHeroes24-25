@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">SuperHeroes24</string>
-    <string name="name_file_xml">Super Heroes</string>
+    <string name="heroes_file_xml">Super Heroes</string>
     <string name="superHero_tittle">Super Hero Name</string>
     <string name="superHeroList">LISTADO DE SUPER HÉROES</string>
     <string name="superhero_description">Descripción superhéroe</string>

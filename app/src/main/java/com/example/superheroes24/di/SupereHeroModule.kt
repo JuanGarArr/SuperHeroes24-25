@@ -1,6 +1,6 @@
 package com.example.superheroes24.di
 
-import com.example.superheroes24.data.api.SuperHeroService
+import com.example.superheroes24.data.remote.SuperHeroService
 import org.koin.core.annotation.ComponentScan
 import org.koin.core.annotation.Module
 import org.koin.core.annotation.Single

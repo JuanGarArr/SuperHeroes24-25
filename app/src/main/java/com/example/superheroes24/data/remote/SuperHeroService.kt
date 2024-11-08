@@ -1,4 +1,4 @@
-package com.example.superheroes24.data.api
+package com.example.superheroes24.data.remote
 
 import com.example.superheroes24.domain.models.SuperHero
 import retrofit2.Response

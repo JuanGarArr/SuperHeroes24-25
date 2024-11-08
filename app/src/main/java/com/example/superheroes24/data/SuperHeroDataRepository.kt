@@ -14,7 +14,6 @@ class SuperHeroDataRepository(
 ) : SuperHeroRepository {
 
 
-
     override suspend fun getSuperHeroes(): List<SuperHero> {
         val heroesFromLocal = local.getAll()
 

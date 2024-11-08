@@ -1,6 +1,7 @@
 package com.example.superheroes24.data.local
 
 import android.content.Context
+import com.example.superheroes24.R
 import com.example.superheroes24.domain.models.SuperHero
 import com.google.gson.Gson
 import org.koin.core.annotation.Factory
@@ -10,11 +11,10 @@ import org.koin.core.annotation.Single
 class SuperHeroXmlLocalDataSource (private val context: Context){
 
     val sharedPref = context.getSharedPreferences(
-        "SuperHero", Context.MODE_PRIVATE
+        context.getString(R.string.heroes_file_xml), Context.MODE_PRIVATE
     )
 
     val gson = Gson()
-
     val editor = sharedPref.edit()
 
 
